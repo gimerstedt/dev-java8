@@ -10,7 +10,8 @@ run apt-get install -y oracle-java8-installer
 
 run apt-get install -y unzip
 run wget https://services.gradle.org/distributions/gradle-2.6-all.zip
-run unzip -qq gradle-2.6-all.zip -d /usr/lib/
+run unzip -qq *.zip -d /usr/lib/
+run rm *.zip
 
 env JAVA_HOME=/usr/lib/jvm/java-8-oracle
 env GRADLE_HOME=/usr/lib/gradle-2.6
