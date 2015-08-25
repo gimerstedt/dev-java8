@@ -9,7 +9,7 @@ run:
 	-it \
 	--name $(container-name) \
 	-v /:/root/host \
-	$(container-name)
+	$(image-name)
 
 stoprm:
 	-docker stop $(container-name)
